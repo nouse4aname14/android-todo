@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TodoList</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">ADD +</string>
+    <string name="auth_token"></string>
+    <string name="title_todo_list">Todos</string>
+    <string name="title_todo_detail">Todo Detail</string>
+    <string name="title_activity_test_list_view">Todo List</string>
+    <string name="title_activity_todo_details">Add Todo</string>
+    <string name="title_activity_todo_details_edit">Edit Todo</string>
+
+</resources>

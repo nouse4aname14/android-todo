@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.test.cameron.todolist.TodoList" >
+    <item android:id="@+id/action_add"
+        android:title="@string/action_settings"
+        android:showAsAction="always" />
+
+    <item android:id="@+id/action_logout"
+        android:title="Logout"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

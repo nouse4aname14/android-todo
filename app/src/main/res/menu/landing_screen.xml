@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LandingScreen" >
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        style="?android:textAppearanceMedium"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

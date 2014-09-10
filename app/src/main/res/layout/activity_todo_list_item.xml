@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:padding="6dip"
+        android:id="@+id/todo_list_item" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/todo_list_item_title"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        android:layout_centerVertical="true" />
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Done"-->
+        <!--android:id="@+id/todo_list_item_button"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="#0099CC"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:longClickable="true"-->
+        <!--android:clickable="true" />-->
+</RelativeLayout>
