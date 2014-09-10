@@ -61,16 +61,12 @@ public class TodoDetails extends Activity {
             public void onClick(View view) {
 
                 mTitleView.setError(null);
-                mDescriptionView.setError(null);
 
                 View focusView = null;
 
                 if (TextUtils.isEmpty(mTitleView.getText().toString())) {
                     mTitleView.setError(getString(R.string.error_field_required));
                     focusView = mTitleView;
-                } else if (TextUtils.isEmpty(mDescriptionView.getText().toString())) {
-                    mDescriptionView.setError(getString(R.string.error_field_required));
-                    focusView = mDescriptionView;
                 } else {
                     showProgress(true);
                     addTodo();

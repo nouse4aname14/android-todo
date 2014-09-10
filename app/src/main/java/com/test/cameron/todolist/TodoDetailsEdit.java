@@ -66,13 +66,27 @@ public class TodoDetailsEdit extends Activity {
 
         mId.setText(rowId);
         mTitle.setText(rowTitle);
-        mDescription.setText(rowDescription);
+
+        if (rowDescription.isEmpty()) {
+            mDescription.setHint("Description");
+        } else {
+            mDescription.setText(rowDescription);
+        }
+
 
         editTodo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showProgress(true);
-                editTodo();
+
+                if (mTitle.getText().toString().isEmpty()) {
+                    mTitle.setError(null);
+                    View focusView = null;
+                    mTitle.setError(getString(R.string.error_field_required));
+                    focusView = mTitle;
+                } else {
+                    showProgress(true);
+                    editTodo();
+                }
             }
         });
 
@@ -104,6 +118,7 @@ public class TodoDetailsEdit extends Activity {
 
                 Intent intent = new Intent(getApplicationContext(), TodoList.class);
                 startActivity(intent);
+
             }
         }, new Response.ErrorListener() {
             @Override
